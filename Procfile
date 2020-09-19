@@ -1,0 +1,1 @@
+web: java -jar target/pizza-ordering-system-backend-1.0-SNAPSHOT.jar
