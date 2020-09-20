@@ -1,0 +1,5 @@
+{
+  "name": "pizza-ordering-system-backend: Java",
+  "description": "Spring application",
+  "addons": [ "heroku-postgresql" ]
+}
