@@ -1,20 +1,16 @@
 package com.order.pizza.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.view.RedirectView;
+import springfox.documentation.annotations.ApiIgnore;
 
 @RestController
-public class TestController {
+@ApiIgnore
+public class DefaultController {
 
     @RequestMapping("/")
-    public String index() {
-        return "The Application is running!";
+    public RedirectView index() {
+        return new RedirectView("/swagger-ui.html", true);
     }
-
-    @GetMapping("/test")
-    public String test() {
-        return "Hello World!";
-    }
-
 }
